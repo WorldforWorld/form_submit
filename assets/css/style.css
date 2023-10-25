@@ -48,6 +48,7 @@
 }
 
 .feedback-form__button {
+  position: relative;
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -56,7 +57,25 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
+.feedback-form__button.js-loading::after {
+  content: "💿";
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  width: 26px;
+  height: 26px;
+  transform: translateY(-50%);
+  font-size: 20px;
+  animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: translateY(-50%) rotate(0);
+  }
+  100% {
+    transform: translateY(-50%) rotate(359deg);
+  }
+}
 .feedback-form__button:hover {
   background-color: #0056b3;
 }
