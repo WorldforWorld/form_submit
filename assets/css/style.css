@@ -43,6 +43,7 @@
   min-height: 50px;
 }
 .feedback-form__field.error .feedback-form__textarea,
+.feedback-form__field.error .feedback-form__checkbox-label::before,
 .feedback-form__field.error .feedback-form__input {
   border-color: rgb(169, 12, 12);
 }
@@ -80,8 +81,6 @@
   background-color: #0056b3;
 }
 
-/* .feedback-form__checkbox-label {
-} */
 .feedback-form__checkbox-label::before {
   content: "";
   display: inline-block;
