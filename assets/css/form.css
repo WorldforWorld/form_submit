@@ -1,0 +1,28 @@
+.feedback-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.feedback-form__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.feedback-form__label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
