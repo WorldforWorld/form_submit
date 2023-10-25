@@ -37,6 +37,11 @@
   border-radius: 5px;
   outline: none;
 }
+.feedback-form__textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 50px;
+}
 .feedback-form__field.error .feedback-form__textarea,
 .feedback-form__field.error .feedback-form__input {
   border-color: rgb(169, 12, 12);
