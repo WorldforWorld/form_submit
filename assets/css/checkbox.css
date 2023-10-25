@@ -1,0 +1,19 @@
+.feedback-form__checkbox-label::before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.feedback-form__field input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.feedback-form__field input[type="checkbox"]:checked + label::before {
+  background-color: #0056b3;
+}
