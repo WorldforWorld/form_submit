@@ -1,0 +1,46 @@
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="feedback-form">
+    <h2 class="feedback-form__title">Обратная связь</h2>
+    <form id="form1" class="feedback-form__form">
+      <div class="feedback-form__field">
+        <label for="name" class="feedback-form__label">Имя:</label>
+        <input name="name" type="text" id="name" class="feedback-form__input  feedback-form__input--name"
+          placeholder="Ваше имя">
+      </div>
+      <div class="feedback-form__field">
+        <label for="email" class="feedback-form__label">Email:</label>
+        <input name="email" type="email" id="email" class="feedback-form__input feedback-form__input--email"
+          placeholder="Ваш Email">
+      </div>
+      <div class="feedback-form__field">
+        <label for="phone" class="feedback-form__label">Phone:</label>
+        <input name="phone" type="tel" id="phone" class="feedback-form__input feedback-form__input--phone"
+          placeholder="Ваш телефон">
+      </div>
+      <div class="feedback-form__field">
+        <label for="message" class="feedback-form__label">Сообщение:</label>
+        <textarea name="message" id="message" class="feedback-form__textarea"
+          placeholder="Введите ваше сообщение"></textarea>
+      </div>
+      <div class="feedback-form__field">
+        <input id="feedback-form__checkbox--form1" type="checkbox" class="feedback-form__checkbox" checked>
+        <label for="feedback-form__checkbox--form1" class="feedback-form__checkbox-label">
+          Я соглашаюсь с <a href="#">обработкой персональных данных</a>
+        </label>
+      </div>
+      <button type="submit" class="feedback-form__button">Отправить</button>
+    </form>
+  </div>
+</body>
+<script type="module" src="assets/js/app.js"></script>
+
+</html>
