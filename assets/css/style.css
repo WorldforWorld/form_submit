@@ -1,34 +1,7 @@
+@import url("form.css");
 @import url("other.css");
-
-.feedback-form {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f8f8f8;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.feedback-form__title {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.feedback-form__form {
-  display: flex;
-  flex-direction: column;
-}
-.feedback-form__field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-}
-.feedback-form__label {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
+@import url("button.css");
+@import url("checkbox.css");
 
 .feedback-form__input,
 .feedback-form__textarea {
@@ -37,64 +10,15 @@
   border-radius: 5px;
   outline: none;
 }
+
 .feedback-form__textarea {
   min-width: 100%;
   max-width: 100%;
   min-height: 50px;
 }
+
 .feedback-form__field.error .feedback-form__textarea,
 .feedback-form__field.error .feedback-form__checkbox-label::before,
 .feedback-form__field.error .feedback-form__input {
   border-color: rgb(169, 12, 12);
-}
-
-.feedback-form__button {
-  position: relative;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.feedback-form__button.js-loading::after {
-  content: "💿";
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  width: 26px;
-  height: 26px;
-  transform: translateY(-50%);
-  font-size: 20px;
-  animation: rotation 1s linear infinite;
-}
-@keyframes rotation {
-  0% {
-    transform: translateY(-50%) rotate(0);
-  }
-  100% {
-    transform: translateY(-50%) rotate(359deg);
-  }
-}
-.feedback-form__button:hover {
-  background-color: #0056b3;
-}
-
-.feedback-form__checkbox-label::before {
-  content: "";
-  display: inline-block;
-  width: 11px;
-  height: 11px;
-  margin-right: 5px;
-  border: 1px solid black;
-  border-radius: 3px;
-}
-.feedback-form__field input[type="checkbox"] {
-  width: 0;
-  height: 0;
-  opacity: 0;
-}
-.feedback-form__field input[type="checkbox"]:checked + label::before {
-  background-color: #0056b3;
 }
