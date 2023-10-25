@@ -23,7 +23,10 @@ form.addEventListener("submit", event => {
   const button = form.querySelector(".feedback-form__button");
   const checkbox = form.querySelector(".feedback-form__checkbox");
   if (!checkbox.checked) {
+    checkbox.parentNode.classList.add("error");
     return;
+  } else {
+    checkbox.parentNode.classList.remove("error");
   }
 
   const fields = form.querySelectorAll(".feedback-form__field");
